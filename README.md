@@ -44,6 +44,26 @@ We organize a variety of events and workshops annually, including:
 
 We acknowledge the generous support of our sponsors, which enables the successful execution of various initiatives and events.
 
+## 🔧 Build Workflow
+
+A simple breakdown of the development process:
+
+Problem Statement 💡  
+        ↓   
+Section Planning 🗂️ (About | Chapters | Events | Contact) along with Theme and Aesthetic through official [website](https://www.ieee-jaduniv.in/)  
+        ↓   
+UI Design 🎨 (Minimal | Modern | IEEE Branding). Used various no-code tools to visualize the vision I planned (3-4 prototypes, selected the best sections)  
+        ↓  
+Frontend Dev 🧑‍💻 (HTML + CSS + JS) (Basic Prototype)  
+        ↓  
+Responsive Layout 📱💻 (Fed the code previously made to Chatgpt for better css structuring including best practices and responsiveness) (Final Prototype)  
+        ↓  
+Code Review & Testing ✅ (Analysed, Understood and Tweaked changes to the new files, tested responsiveness with Chrome Tools)  
+        ↓   
+GitHub Push ⬆️  
+        ↓  
+Deployment via Vercel 🚀  
+
 ## Contact Information
 
 For more information, collaboration opportunities, or inquiries, please visit our website: [https://ieee-recruitement-supratim.vercel.app/index.html](https://ieee-recruitement-supratim.vercel.app/index.html)
