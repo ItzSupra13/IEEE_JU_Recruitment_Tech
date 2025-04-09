@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - IEEE Student Branch, Jadavpur University</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <div class="logo">
+          <a href="index.html">
+            <div class="logo-container">
+              <div class="logo-icon">
+                <img style="background-color: transparent;"src="https://www.ieee-jaduniv.in/assets/RAW%20Logo-BTQ6wDgW.png" alt="IEEE Logo">
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <div class="nav-links desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="index.html#about" class="nav-link">About</a>
+          <a href="index.html#chapters" class="nav-link">Chapters</a>
+          <a href="events.html" class="nav-link active">Events</a>
+          <a href="index.html#sponsors" class="nav-link">Sponsors</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+          
+          <a href="" class="btn btn-primary join-btn">Join Us!</a>
+        </div>
+        
+        <!-- Mobile menu button -->
+        <div class="mobile-nav-controls">
+          <button class="avatar-btn mobile-avatar">
+            <div class="avatar">
+              <img src="https://via.placeholder.com/32x32?text=JD" alt="User">
+            </div>
+          </button>
+          <button id="mobile-menu-btn" class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-content">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="index.html#about" class="mobile-nav-link">About</a>
+        <a href="index.html#chapters" class="mobile-nav-link">Chapters</a>
+        <a href="events.html" class="mobile-nav-link active">Events</a>
+        <a href="index.html#sponsors" class="mobile-nav-link">Sponsors</a>
+        <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+        <div class="mobile-btn-container">
+          <a href="#" class="btn btn-primary mobile-join-btn">Join IEEE</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Events Hero -->
+    <section class="events-hero">
+      <div class="container">
+        <a href="index.html" class="back-link">
+          <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+        <h1 class="events-hero-title">Events</h1>
+        <p class="events-hero-description">
+          Discover our upcoming events and revisit the highlights from our past gatherings.
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- Search and Filter -->
+      <div class="events-filter">
+        <div class="filter-grid">
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Search events..." class="search-input">
+          </div>
+          
+          <div class="filter-container">
+            <div class="filter-select">
+              <div class="select-icon">
+                <i class="fas fa-filter"></i>
+              </div>
+              <select id="categoryFilter" class="filter-dropdown">
+                <option value="all">All Categories</option>
+                <option value="workshop">Workshops</option>
+                <option value="seminar">Seminars</option>
+                <option value="competition">Competitions</option>
+                <option value="panel">Podcast</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Events Tabs -->
+      <div class="events-tabs">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="upcoming">Upcoming Events</button>
+          <button class="tab-btn" data-tab="past">Past Events</button>
+        </div>
+        
+        <div class="tab-content active" id="upcoming-tab">
+          <div class="events-grid">
+            <!-- MLAS4 -->
+            <div class="event-card-detailed">
+              <div class="event-image-container">
+                <div class="event-image-overlay"></div>
+                <img style="background-color:black;" src="https://www.ieee-jaduniv.in/events/mlas3.webp" alt="MLAS">
+                <div class="event-badges">
+                  <span class="event-badge primary">Workshop</span>
+                </div>
+                <h3 class="event-image-title">ML Accelerator Summit</h3>
+              </div>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <i class="fas fa-calendar"></i>
+                  <span>13-14 January, 2024</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-clock"></i>
+                  <span>10:00 AM - 6:00 PM</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Triguna Sen Auditorium, Jadavpur University</span>
+                </div>
+              </div>
+              
+              <div class="event-description">
+                <p>The Machine Learning Accelerator Summit is an event designed to provide participants with a robust foundation in Machine Learning. Through expert-led sessions on Python and hands-on workshops in Machine Learning and Deep Learning, participants gain extensive knowledge in these fields along with the skills necessary to advance their ML expertise.</p>
+              </div>
+              
+              <div class="event-action">
+                <a href="" class="btn btn-primary btn-block">Register Now</a>
+              </div>
+            </div>
+            
+            <!-- Hackathon: // -->
+            <div class="event-card-detailed">
+              <div class="event-image-container">
+                <div class="event-image-overlay"></div>
+                <img src="https://www.ieee-jaduniv.in/events/doubleslash3.webp" alt="Hackathon: Solve for Tomorrow">
+                <div class="event-badges">
+                  <span class="event-badge primary">Competition</span>
+                </div>
+                <h3 class="event-image-title">DoubleSlash 3.0</h3>
+              </div>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <i class="fas fa-calendar"></i>
+                  <span>15-16 February, 2025</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-clock"></i>
+                  <span>9:00 AM - 6:00 PM</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Computer Science Building, Jadavpur University</span>
+                </div>
+              </div>
+              
+              <div class="event-description">
+                <p>Double Slash is the premier 24-hour offline hackathon organized by IEEE Jadavpur University Student Branch, designed to foster innovation, creativity, and problem-solving. Bringing together tech enthusiasts, developers, and innovators, this event provides a platform to collaborate, code, and create impactful solutions to real-world challenges.</p>
+              </div>
+              
+              <div class="event-action">
+                <a href="https://doubleslash3.ieee-jaduniv.in/" target="_blank" class="btn btn-primary btn-block">Register Now</a>
+              </div>
+            </div>
+
+            <!-- Cypher 3331 -->
+            <div class="event-card-detailed">
+              <div class="event-image-container">
+                <div class="event-image-overlay"></div>
+                <img style="background-color: black;"src="https://srijanju.in/assets/cypher3331-CdrZBUEf.webp" alt="Cypher 3331">
+                <div class="event-badges">
+                  <span class="event-badge primary">Competition</span>
+                </div>
+                <h3 class="event-image-title">Cypher 3331</h3>
+              </div>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <i class="fas fa-calendar"></i>
+                  <span>22-23 April, 2025</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Jadavpur University, Salt Lake Campus</span>
+                </div>
+              </div>
+              
+              <div class="event-description">
+                <p>Participants will dive into an exciting journey of brainstorming, ciphering, and Cryptography with no prior experience needed! Just a device on which A short crash course will equip you with all the essential of cryptographic techniques you'll need to crack the code. Using this knowledge and your presence of mind, you need to battle through 4 thrilling stages in prelims to secure your spot at the dream finals of Cypher 3331. Ready to crack the code? Then let the game of cipher begin!</p>
+              </div>
+              
+              <div class="event-action">
+                <a href="https://srijanju.in/events/cypher3331" class="btn btn-primary btn-block" target="_blank">Register Now</a>
+              </div>
+            </div>
+            
+            <!-- Podcast -->
+            <div class="event-card-detailed">
+              <div class="event-image-container">
+                <div class="event-image-overlay"></div>
+                <img src="https://www.ieee-jaduniv.in/events/pass-the-mic.webp" alt="Pass the mic">
+                <div class="event-badges">
+                  <span class="event-badge primary">Podcast</span>
+                </div>
+                <h3 class="event-image-title">Podcast</h3>
+              </div>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <i class="fas fa-calendar"></i>
+                  <span>July-August, 2024</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Spotify</span>
+                </div>
+              </div>
+              
+              <div class="event-description">
+                <p>Pass the Mic is a thought-provoking podcast on Spotify, curated by Jadavpur University Student Branch, featuring expert discussions on technology, innovation, and industry trends. Each episode offers insightful conversations with professionals and thought leaders, fostering knowledge exchange and critical thinking.</p>
+              </div>
+              
+              <div class="event-action">
+                <a href="https://pass-the-mic.ieee-jaduniv.in/" target="_blank" class="btn btn-primary btn-block">Check it out!</a>
+              </div>
+            </div>
+            
+            <!-- Hello IEEE -->
+            <div class="event-card-detailed">
+              <div class="event-image-container">
+                <div class="event-image-overlay"></div>
+                <img style="background-color: black;"src="https://www.ieee-jaduniv.in/events/hello-2025.webp" alt="Hello IEEE">
+                <div class="event-badges">
+                  <span class="event-badge primary">Seminar</span>
+                </div>
+                <h3 class="event-image-title">Hello IEEE!</h3>
+              </div>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <i class="fas fa-calendar"></i>
+                  <span>8 January, 2025</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-clock"></i>
+                  <span>3:00 PM - 6:00 PM</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Triguna Sen Auditorium, Jadavpur University</span>
+                </div>
+              </div>
+              
+              <div class="event-description">
+                <p>Hello IEEE is the perfect kickoff for freshers to dive into the world of IEEE at Jadavpur University! It’s where you hear inspiring alumni stories, and see how IEEE shaped their journeys. From hands-on workshops to tech quizzes, there’s something for everyone. It’s the best way to connect with seniors, make new friends, and experience the IEEE culture firsthand.</p>
+              </div>
+              
+              <div class="event-action">
+                <a href="https://hello.ieee-jaduniv.in/" class="btn btn-primary btn-block" target="_blank">Register Now</a>
+              </div>
+            </div>
+            
+          
+          </div>
+        </div>
+        
+        
+        <div class="tab-content" id="past-tab">
+          <div class="events-grid">
+            
+            <!-- Elevate 2.0-->
+            <div class="event-card-detailed">
+              <div class="event-image-container">
+                <div class="event-image-overlay"></div>
+                <img src="https://www.ieee-jaduniv.in/events/elevatex2.webp" alt="PCB Design and Fabrication">
+                <div class="event-badges">
+                  <span class="event-badge primary">Seminar</span>
+                </div>
+                <h3 class="event-image-title">ElevateX 2.0</h3>
+              </div>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <i class="fas fa-calendar"></i>
+                  <span>31 Jul - 22 Aug, 2021</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-clock"></i>
+                  <span>JUST</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Somewhere in JU</span>
+                </div>
+              </div>
+              
+              <div class="event-description">
+                <p>ElevateX 2.0 is the second edition of elevateX an all-in-one mentoring session by IEEE JU SB members. Be it research or industry, be it competitive coding, or soft skill development, we have tracks tailor-made for your needs, complete with doubt-clearing, quick contests, real-world problems and webinars by field experts.</p>
+              </div>
+
+              <div class="event-action">
+                <a href="https://elevatex-2.0.ieee-jaduniv.in/" class="btn btn-primary btn-block" target="_blank">Check it out</a>
+              </div>
+              
+            </div>
+            
+            <!-- DoubleSlash -->
+            <div class="event-card-detailed">
+              <div class="event-image-container">
+                <div class="event-image-overlay"></div>
+                <img src="https://www.ieee-jaduniv.in/events/double.webp" alt="DoubleSlash 1.0">
+                <div class="event-badges">
+                  <span class="event-badge primary">Competition</span>
+                </div>
+                <h3 class="event-image-title">DoubleSlash 1.0</h3>
+              </div>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <i class="fas fa-calendar"></i>
+                  <span>9-11 July, 2021</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-clock"></i>
+                  <span>JUST</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Somewhere in JU probably SL campus</span>
+                </div>
+              </div>
+              
+              <div class="event-description">
+                <p>“DoubleSlash - Code.Commit.Create” was a monumental 48-hour long Hackathon organized by the IEEE Jadavpur University Student Branch, IEEE Young Professionals Kolkata section and IEEE Computer Society Kolkata section. This was the first event in 2021.</p>
+              </div>
+              
+              <div class="event-action">
+                <a href="https://doubleslash.ieee-jaduniv.in/" class="btn btn-primary btn-block" target="_blank">Check it out</a>
+              </div>
+            </div>
+
+            <!-- Cypher 3331 -->
+            <div class="event-card-detailed">
+              <div class="event-image-container">
+                <div class="event-image-overlay"></div>
+                <img src="https://srijan24.vercel.app/images/events/Cypher.png" alt="Technical Symposium 2023">
+                <div class="event-badges">
+                  <span class="event-badge primary">Competition</span>
+                </div>
+                <h3 class="event-image-title">Cypher 3331</h3>
+              </div>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <i class="fas fa-calendar"></i>
+                  <span>22-24 March, 2024</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Somewhere in JU</span>
+                </div>
+              </div>
+              
+              <div class="event-description">
+                <p>Held as part of Jadavpur University's annual tech fest, Srijan, and organized by IEEE JUSB, Cypher dives into the realm of cryptography, coding, and decoding. Participants gain insights into various codes and are presented with challenging brain-teasers,with the levels of complexity increasing as they progress into subsequent rounds.</p>
+              </div>
+              
+              <div class="event-action">
+                <a href="https://srijan24.vercel.app/events/ieee-cypher" class="btn btn-primary btn-block" target="_blank">Check it out</a>
+              </div>
+            </div>
+            
+            <!-- Hello IEEE -->
+            <div class="event-card-detailed">
+              <div class="event-image-container">
+                <div class="event-image-overlay"></div>
+                <img src="https://www.ieee-jaduniv.in/events/helloieee.webp" alt="Hello IEEE!">
+                <div class="event-badges">
+                  <span class="event-badge primary">Seminar</span>
+                </div>
+                <h3 class="event-image-title">Hello IEEE</h3>
+              </div>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <i class="fas fa-calendar"></i>
+                  <span>14 Sept, 2022</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-clock"></i>
+                  <span>JUST</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Triguna Sen Auditorium, Jadavpur University</span>
+                </div>
+              </div>
+              
+              <div class="event-description">
+                <p>Unrivaled and unparalleled, Hello-IEEE stands true to its name: Introducing the myriad boons of IEEE to young enthusiasts yet to blossom into leaders of tomorrow and seamlessly bridging the gap between industry and academia through its unique array of events.</p>
+              </div>
+              
+              <div class="event-action">
+                <a href="https://ieee-ju.github.io/hello-IEEE/" class="btn btn-primary btn-block" target="_blank">CHeck it out</a>
+              </div>
+            </div>
+            
+            <!-- Tech X -->
+            <div class="event-card-detailed">
+              <div class="event-image-container">
+                <div class="event-image-overlay"></div>
+                <img src="https://www.ieee-jaduniv.in/events/techx.webp" alt="Tech X Congress">
+                <div class="event-badges">
+                  <span class="event-badge primary">Workshop</span>
+                </div>
+                <h3 class="event-image-title">TechX</h3>
+              </div>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <i class="fas fa-calendar"></i>
+                  <span>28 Feb - 1 Mar, 2020</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-clock"></i>
+                  <span>JUST</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Somewhere either JU or NITDGP</span>
+                </div>
+              </div>
+              
+              <div class="event-description">
+                <p>TechX Congress is the Eastern Indian Techno-Management Leadership Summit hosted by the IEEE computer society SYP MGAB in collaboration with two of India’s premier IEEE student chapters - Jadavpur University and NIT Durgapur</p>
+              </div>
+
+              <div class="event-action">
+                <a href="https://ieee-ju.github.io/techX/" class="btn btn-primary btn-block" target="_blank">CHeck it out</a>
+              </div>
+            </div>
+            
+            <!-- Rewired 1.0 -->
+            <div class="event-card-detailed">
+              <div class="event-image-container">
+                <div class="event-image-overlay"></div>
+                <img src="https://www.ieee-jaduniv.in/events/rewired.webp" alt="Rewired 1.0">
+                <div class="event-badges">
+                  <span class="event-badge primary">Workshop</span>
+                </div>
+                <h3 class="event-image-title">Rewired 1.0</h3>
+              </div>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <i class="fas fa-calendar"></i>
+                  <span>1 Sep, 2019</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Kerala?</span>
+                </div>
+              </div>
+              
+              <div class="event-description">
+                <p>Rewired 1.0 conducted by the IEEE Jadavpur University Student Branch was a Hands-on workshop mainly focused to attract students to learn about the intricacies of Electronics. It was mainly focused to attract students to learn Electronics and understand the practical aspects of it.</p>
+              </div>
+
+              <div class="event-action">
+                <a href="https://www.facebook.com/100063847662071/posts/487814142050804/" class="btn btn-primary btn-block" target="_blank">CHeck it out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-container">
+                <img src="https://www.ieee-jaduniv.in/assets/RAW%20Logo-BTQ6wDgW.png" alt="IEEE Logo">
+            </div>
+          </div>
+          <p class="footer-description">
+            Empowering students to innovate and excel in the field of technology and engineering.
+          </p>
+          <div class="footer-social">
+            <a href="https://x.com/IeeeJadavpur" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/ieeejusb" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/_ieeeju/" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/ieee-ju" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="index.html#chapters">Chapters</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        
+        <div class="footer-contact">
+          <h3 class="footer-title">Contact</h3>
+          <address class="footer-address">
+            <p>Jadavpur University</p>
+            <p>188 Raja S.C. Mallick Rd</p>
+            <p>Kolkata, West Bengal 700032</p>
+            <p class="mt-2">Email: jaduniv.ieee@gmail.com</p>
+            <p>Phone: +91 98361 05125</p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Supratim Chakraborty. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
