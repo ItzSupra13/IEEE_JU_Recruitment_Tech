@@ -43,11 +43,20 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: var(--text-color);
   line-height: 1.5;
   background-color: var(--bg-light);
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -127,6 +136,7 @@ h6 {
   cursor: pointer;
   border: none;
   font-size: 0.875rem;
+  white-space: nowrap;
 }
 
 .btn i {
@@ -177,6 +187,29 @@ h6 {
   width: 100%;
 }
 
+.theme-toggle {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: var(--primary-light);
+}
+
 /* Navbar */
 .navbar {
   background-color: rgba(255, 255, 255, 0.8);
@@ -214,6 +247,14 @@ h6 {
   padding: 0.25rem;
 }
 
+@media (min-width: 769px) {
+  .logo-icon img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+}
+
 .logo-text {
   margin-left: 0.75rem;
   font-size: 1.25rem;
@@ -248,72 +289,6 @@ h6 {
 
 .join-btn {
   margin-left: 1rem;
-}
-
-.avatar {
-  height: 2rem;
-  width: 2rem;
-  border-radius: 9999px;
-  overflow: hidden;
-}
-
-.avatar img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.avatar-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  margin-left: 0.5rem;
-}
-
-.user-dropdown {
-  position: relative;
-}
-
-.dropdown-menu {
-  position: absolute;
-  right: 0;
-  top: 100%;
-  width: 14rem;
-  background-color: var(--bg-color);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
-  margin-top: 0.5rem;
-  display: none;
-  z-index: 10;
-}
-
-.user-dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-header {
-  padding: 0.75rem 1rem;
-  font-weight: 500;
-  color: var(--text-color);
-}
-
-.dropdown-divider {
-  height: 1px;
-  background-color: var(--border-color);
-  margin: 0.25rem 0;
-}
-
-.dropdown-item {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: var(--text-light);
-  transition: all 0.2s ease;
-}
-
-.dropdown-item:hover {
-  background-color: var(--bg-light);
-  color: var(--primary-color);
 }
 
 .mobile-nav-controls {
@@ -541,7 +516,7 @@ h6 {
 }
 
 .hero-image-container {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
   border-radius: var(--radius-2xl);
   background: linear-gradient(to bottom right, var(--primary-light), var(--primary-color));
   padding: 0.25rem;
@@ -652,8 +627,8 @@ h6 {
 .about-image::after {
   content: "";
   position: absolute;
-  bottom: -1.5rem;
-  right: -1.5rem;
+  bottom: -0.5rem;
+  right: -0.75rem;
   width: 100%;
   height: 100%;
   background-color: var(--primary-color);
@@ -775,6 +750,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100px;
 }
 
 .chapter-logo-container {
@@ -824,6 +800,9 @@ h6 {
 .chapter-logo-inner img {
   height: 2.5rem;
   width: 2.5rem;
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: contain;
 }
 
 .chapter-info {
@@ -1300,6 +1279,38 @@ h6 {
   background-color: var(--bg-color);
 }
 
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form,
+.contact-info {
+  flex: 1 1 100%; 
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-info {
+    margin-bottom: 2rem;
+  }
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1480,9 +1491,12 @@ h6 {
 
 /* Events Page Styles */
 .events-hero {
+  position: relative;
   background: linear-gradient(to right, var(--primary-dark), var(--primary-color));
   color: var(--text-white);
-  padding: 4rem 0;
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 1rem;
 }
 
 .back-link {
@@ -1631,6 +1645,9 @@ h6 {
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .event-card-detailed:hover {
@@ -1718,6 +1735,7 @@ h6 {
 
 .event-action {
   padding: 1rem;
+  margin-top: auto;
 }
 
 /* Footer */

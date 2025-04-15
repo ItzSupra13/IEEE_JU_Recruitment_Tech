@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+  <button id="themeToggle" class="theme-toggle">
+    <i class="fas fa-moon"></i>
+  </button>
+
   <!-- Navbar -->
   <nav class="navbar">
     <div class="container">
@@ -24,7 +29,7 @@
         
         <!-- Desktop Navigation -->
         <div class="nav-links desktop-nav">
-          <a href="index.html" class="nav-link">Home</a>
+          <a href="index.html#top" class="nav-link">Home</a>
           <a href="index.html#about" class="nav-link">About</a>
           <a href="index.html#chapters" class="nav-link">Chapters</a>
           <a href="events.html" class="nav-link active">Events</a>
@@ -36,11 +41,6 @@
         
         <!-- Mobile menu button -->
         <div class="mobile-nav-controls">
-          <button class="avatar-btn mobile-avatar">
-            <div class="avatar">
-              <img src="https://via.placeholder.com/32x32?text=JD" alt="User">
-            </div>
-          </button>
           <button id="mobile-menu-btn" class="mobile-menu-btn">
             <i class="fas fa-bars"></i>
           </button>
@@ -113,38 +113,34 @@
         
         <div class="tab-content active" id="upcoming-tab">
           <div class="events-grid">
-            <!-- MLAS4 -->
+            <!-- Cypher 3331 -->
             <div class="event-card-detailed">
               <div class="event-image-container">
                 <div class="event-image-overlay"></div>
-                <img style="background-color:black;" src="https://www.ieee-jaduniv.in/events/mlas3.webp" alt="MLAS">
+                <img style="background-color: black;"src="https://srijanju.in/assets/cypher3331-CdrZBUEf.webp" alt="Cypher 3331">
                 <div class="event-badges">
-                  <span class="event-badge primary">Workshop</span>
+                  <span class="event-badge primary">Competition</span>
                 </div>
-                <h3 class="event-image-title">ML Accelerator Summit</h3>
+                <h3 class="event-image-title">Cypher 3331</h3>
               </div>
               
               <div class="event-details">
                 <div class="event-detail">
                   <i class="fas fa-calendar"></i>
-                  <span>13-14 January, 2024</span>
-                </div>
-                <div class="event-detail">
-                  <i class="fas fa-clock"></i>
-                  <span>10:00 AM - 6:00 PM</span>
+                  <span>22-23 April, 2025</span>
                 </div>
                 <div class="event-detail">
                   <i class="fas fa-map-marker-alt"></i>
-                  <span>Triguna Sen Auditorium, Jadavpur University</span>
+                  <span>Jadavpur University, Salt Lake Campus</span>
                 </div>
               </div>
               
               <div class="event-description">
-                <p>The Machine Learning Accelerator Summit is an event designed to provide participants with a robust foundation in Machine Learning. Through expert-led sessions on Python and hands-on workshops in Machine Learning and Deep Learning, participants gain extensive knowledge in these fields along with the skills necessary to advance their ML expertise.</p>
+                <p>Participants will dive into an exciting journey of brainstorming, ciphering, and Cryptography with no prior experience needed! Just a device on which A short crash course will equip you with all the essential of cryptographic techniques you'll need to crack the code. Using this knowledge and your presence of mind, you need to battle through 4 thrilling stages in prelims to secure your spot at the dream finals of Cypher 3331. Ready to crack the code? Then let the game of cipher begin!</p>
               </div>
               
               <div class="event-action">
-                <a href="" class="btn btn-primary btn-block">Register Now</a>
+                <a href="https://srijanju.in/events/cypher3331" class="btn btn-primary btn-block" target="_blank">Register Now</a>
               </div>
             </div>
             
@@ -177,71 +173,9 @@
               <div class="event-description">
                 <p>Double Slash is the premier 24-hour offline hackathon organized by IEEE Jadavpur University Student Branch, designed to foster innovation, creativity, and problem-solving. Bringing together tech enthusiasts, developers, and innovators, this event provides a platform to collaborate, code, and create impactful solutions to real-world challenges.</p>
               </div>
-              
-              <div class="event-action">
-                <a href="https://doubleslash3.ieee-jaduniv.in/" target="_blank" class="btn btn-primary btn-block">Register Now</a>
-              </div>
-            </div>
 
-            <!-- Cypher 3331 -->
-            <div class="event-card-detailed">
-              <div class="event-image-container">
-                <div class="event-image-overlay"></div>
-                <img style="background-color: black;"src="https://srijanju.in/assets/cypher3331-CdrZBUEf.webp" alt="Cypher 3331">
-                <div class="event-badges">
-                  <span class="event-badge primary">Competition</span>
-                </div>
-                <h3 class="event-image-title">Cypher 3331</h3>
-              </div>
-              
-              <div class="event-details">
-                <div class="event-detail">
-                  <i class="fas fa-calendar"></i>
-                  <span>22-23 April, 2025</span>
-                </div>
-                <div class="event-detail">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <span>Jadavpur University, Salt Lake Campus</span>
-                </div>
-              </div>
-              
-              <div class="event-description">
-                <p>Participants will dive into an exciting journey of brainstorming, ciphering, and Cryptography with no prior experience needed! Just a device on which A short crash course will equip you with all the essential of cryptographic techniques you'll need to crack the code. Using this knowledge and your presence of mind, you need to battle through 4 thrilling stages in prelims to secure your spot at the dream finals of Cypher 3331. Ready to crack the code? Then let the game of cipher begin!</p>
-              </div>
-              
               <div class="event-action">
-                <a href="https://srijanju.in/events/cypher3331" class="btn btn-primary btn-block" target="_blank">Register Now</a>
-              </div>
-            </div>
-            
-            <!-- Podcast -->
-            <div class="event-card-detailed">
-              <div class="event-image-container">
-                <div class="event-image-overlay"></div>
-                <img src="https://www.ieee-jaduniv.in/events/pass-the-mic.webp" alt="Pass the mic">
-                <div class="event-badges">
-                  <span class="event-badge primary">Podcast</span>
-                </div>
-                <h3 class="event-image-title">Podcast</h3>
-              </div>
-              
-              <div class="event-details">
-                <div class="event-detail">
-                  <i class="fas fa-calendar"></i>
-                  <span>July-August, 2024</span>
-                </div>
-                <div class="event-detail">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <span>Spotify</span>
-                </div>
-              </div>
-              
-              <div class="event-description">
-                <p>Pass the Mic is a thought-provoking podcast on Spotify, curated by Jadavpur University Student Branch, featuring expert discussions on technology, innovation, and industry trends. Each episode offers insightful conversations with professionals and thought leaders, fostering knowledge exchange and critical thinking.</p>
-              </div>
-              
-              <div class="event-action">
-                <a href="https://pass-the-mic.ieee-jaduniv.in/" target="_blank" class="btn btn-primary btn-block">Check it out!</a>
+                <a href="https://doubleslash3.ieee-jaduniv.in/" class="btn btn-primary btn-block" target="_blank">Check it out</a>
               </div>
             </div>
             
@@ -276,11 +210,75 @@
               </div>
               
               <div class="event-action">
-                <a href="https://hello.ieee-jaduniv.in/" class="btn btn-primary btn-block" target="_blank">Register Now</a>
+                <a href="https://hello.ieee-jaduniv.in/" class="btn btn-primary btn-block" target="_blank">Check it out</a>
+              </div>
+            </div>
+
+            <!-- Podcast -->
+            <div class="event-card-detailed">
+              <div class="event-image-container">
+                <div class="event-image-overlay"></div>
+                <img src="https://www.ieee-jaduniv.in/events/pass-the-mic.webp" alt="Pass the mic">
+                <div class="event-badges">
+                  <span class="event-badge primary">Podcast</span>
+                </div>
+                <h3 class="event-image-title">Podcast</h3>
+              </div>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <i class="fas fa-calendar"></i>
+                  <span>July-August, 2024</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Spotify</span>
+                </div>
+              </div>
+              
+              <div class="event-description">
+                <p>Pass the Mic is a thought-provoking podcast on Spotify, curated by Jadavpur University Student Branch, featuring expert discussions on technology, innovation, and industry trends. Each episode offers insightful conversations with professionals and thought leaders, fostering knowledge exchange and critical thinking.</p>
+              </div>
+              
+              <div class="event-action">
+                <a href="https://pass-the-mic.ieee-jaduniv.in/" target="_blank" class="btn btn-primary btn-block">Check it out</a>
               </div>
             </div>
             
-          
+            <!-- MLAS4 -->
+            <div class="event-card-detailed">
+              <div class="event-image-container">
+                <div class="event-image-overlay"></div>
+                <img style="background-color:black;" src="https://www.ieee-jaduniv.in/events/mlas3.webp" alt="MLAS">
+                <div class="event-badges">
+                  <span class="event-badge primary">Workshop</span>
+                </div>
+                <h3 class="event-image-title">ML Accelerator Summit</h3>
+              </div>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <i class="fas fa-calendar"></i>
+                  <span>13-14 January, 2024</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-clock"></i>
+                  <span>10:00 AM - 6:00 PM</span>
+                </div>
+                <div class="event-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Triguna Sen Auditorium, Jadavpur University</span>
+                </div>
+              </div>
+              
+              <div class="event-description">
+                <p>The Machine Learning Accelerator Summit is an event designed to provide participants with a robust foundation in Machine Learning. Through expert-led sessions on Python and hands-on workshops in Machine Learning and Deep Learning, participants gain extensive knowledge in these fields along with the skills necessary to advance their ML expertise.</p>
+              </div>
+              
+              <div class="event-action">
+                <a href="" class="btn btn-primary btn-block">Check it out</a>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -510,10 +508,10 @@
             Empowering students to innovate and excel in the field of technology and engineering.
           </p>
           <div class="footer-social">
-            <a href="https://x.com/IeeeJadavpur" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.facebook.com/ieeejusb" class="footer-social-link"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/_ieeeju/" class="footer-social-link"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/ieee-ju" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/ieeejusb" class="footer-social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/_ieeeju" class="footer-social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/_ieeeju/" class="footer-social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/ieee-ju" class="footer-social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
         

@@ -7,7 +7,12 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body id="top">
+
+  <button id="themeToggle" class="theme-toggle">
+    <i class="fas fa-moon"></i>
+  </button>
+
   <!-- Navbar -->
   <nav class="navbar">
     <div class="container">
@@ -22,7 +27,7 @@
         
         <!-- Desktop Navigation -->
         <div class="nav-links desktop-nav">
-          <a href="index.html" class="nav-link active">Home</a>
+          <a href="#top" class="nav-link active">Home</a>
           <a href="#about" class="nav-link">About</a>
           <a href="#chapters" class="nav-link">Chapters</a>
           <a href="events.html" class="nav-link">Events</a>
@@ -105,7 +110,6 @@
               <img src="https://jadavpuruniversity.in/storage/2021/06/WhatsApp-Image-2021-06-16-at-3.31.51-PM.jpeg" alt="IEEE Jadavpur University">
             </div>
             <div class="hero-image-icon">
-              <!-- <i class="fas fa-users"></i> -->
               <img src="https://i0.wp.com/jadunivpress.org/wp-content/uploads/2023/06/univ-logo_white.png?fit=768%2C768&ssl=1" alt="IEEE Jadavpur University" style="height: 80%;object-fit:contain;">
             </div>
           </div>
@@ -131,7 +135,7 @@
                   </p>
                   <div class="stats-grid">
                     <div class="stat-card">
-                      <h3 class="stat-number">3+</h3>
+                      <h3 class="stat-number">5+</h3>
                       <p class="stat-label">Events Annually</p>
                     </div>
                     <div class="stat-card">
@@ -149,7 +153,7 @@
                   </div>
                 </div>
                 <div class="about-image">
-                  <img style="object-fit: fill;" src="placeholder.jpeg" alt="IEEE Student Branch Team" class="about-img">
+                  <img src="placeholder.jpeg" alt="IEEE Student Branch Team" class="about-img">
                 </div>
               </div>
           </p>
@@ -368,22 +372,6 @@
       </div>
     </section>
 
-    <!-- Newsletter -->
-    <section class="newsletter">
-      <div class="container">
-        <div class="newsletter-content">
-          <h2 class="newsletter-title">Stay Updated</h2>
-          <p class="newsletter-description">
-            Subscribe to our newsletter for the latest events and opportunities.
-          </p>
-          <div class="newsletter-form">
-            <input type="email" placeholder="Enter your email" class="newsletter-input">
-            <button class="btn btn-light">Subscribe</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
@@ -444,10 +432,10 @@
               <div class="social-links">
                 <h4>Follow Us</h4>
                 <div class="social-icons">
-                  <a href="https://x.com/IeeeJadavpur" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                  <a href="https://www.facebook.com/ieeejusb" class="social-icon"><i class="fab fa-twitter"></i></a>
-                  <a href="https://www.instagram.com/_ieeeju/" class="social-icon"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/company/ieee-ju/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://www.facebook.com/ieeejusb " class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://x.com/_ieeeju" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/_ieeeju/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/company/ieee-ju/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
               </div>
             </div>
@@ -516,10 +504,10 @@
             Empowering students to innovate and excel in the field of technology and engineering.
           </p>
           <div class="footer-social">
-            <a href="https://x.com/IeeeJadavpur" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="http://facebook.com/ieeejusb" class="footer-social-link"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/_ieeeju/" class="footer-social-link"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/ieee-ju/" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="http://facebook.com/ieeejusb" class="footer-social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/_ieeeju" class="footer-social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/_ieeeju/" class="footer-social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/ieee-ju/" class="footer-social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
         
@@ -540,8 +528,8 @@
             <p>Jadavpur University</p>
             <p>188 Raja S.C. Mallick Rd</p>
             <p>Kolkata, West Bengal 700032</p>
-            <p class="mt-2">Email: ieee.jadavpur@example.com</p>
-            <p>Phone: +91 98765 43210</p>
+            <p class="mt-2">Email: jaduniv.ieee@gmail.com</p>
+            <p>Phone: +91 98361 05125</p>
           </address>
         </div>
       </div>
