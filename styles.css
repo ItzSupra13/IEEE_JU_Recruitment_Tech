@@ -37,6 +37,21 @@
   --teal-bg: #f0fdfa;
 }
 
+.dark{
+  --primary-color:#026fae;
+  --primary-light:  #1e3848;
+  --primary-dark: #a0dde8;
+  --secondary-color: #f0f9ff;
+  --text-color: #1f2937;
+  --text-light: #6b7280;
+  --text-white: #ffffff;
+  --bg-color: #ffffff;
+  --bg-light: #0080ff;
+  --bg-dark: #012136;
+  --border-color: #e1d6da;
+}
+
+
 * {
   margin: 0;
   padding: 0;

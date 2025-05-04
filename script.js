@@ -76,3 +76,39 @@ themeToggle.addEventListener("click", () => {
 });
 
 });
+
+// Fixing search and filter in events page
+const searchInput = document.querySelector(".search-input");
+const filterSelect = document.querySelector(".filter-dropdown");
+const eventCards = document.querySelectorAll(".event-card-detailed");
+
+searchInput.addEventListener("input", () => {
+  const searchTerm = searchInput.value.toLowerCase();
+  eventCards.forEach((card) => {
+    const eventName = card.querySelector(".event-image-title").textContent.toLowerCase();
+    if (eventName.includes(searchTerm)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
+
+filterSelect.addEventListener("change", () => {
+  let selectedCategory = filterSelect.value;
+  eventCards.forEach((card) => {
+    const eventCategory = card.querySelector(".event-badge").textContent.toLowerCase();
+    console.log(eventCategory, selectedCategory);
+    if (eventCategory === selectedCategory) {
+      card.style.display = "block";
+    } 
+    else{
+      if(selectedCategory === "all") {
+        card.style.display = "block";
+      }
+      else {
+        card.style.display = "none";
+      }
+    }
+  });
+});
